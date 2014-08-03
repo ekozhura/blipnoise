@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        {% for course in courses %}
+        <div class="bs-docs-section">
+                <div class="col-lg-6 col-md-6 col-sm-12 blp-course">
+                    <div class="page-header">
+                        <h2>{{course.title}}</h2>
+                    </div>
+                    <div class="bs-component">
+                        <div>
+                        {% for tags in course.tags %}
+                            <span class="label label-primary">{{tags}}</span>
+                        {% endfor%}
+                        </div>
+                        <br/>
+                        <div><!-- class="panel-body"-->
+
+                            <!--div class="col-md-4">
+                                <div class="panel">
+                                    <img ng-src="{{course.thumb}}" />
+                                </div>
+                            </div-->
+                            <div>
+                            
+                            <p>{{course.previewText}}
+                            <div class="panel-group" id="course{{course.id}}">
+                                <div>
+                                    <div id="collapse{{course.id}}" class="panel panel-collapse collapse panel-primary">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Content:</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="list-group">
+                                                {% for content in course.content %}
+                                                <a href="#" class="list-group-item">{{content}}</a>
+                                                {% endfor %}
+                                            </div>
+                                            <table class="table">
+                                                <tr><td><strong>Lessons:</strong></td><td>{{course.lessons}}</td></tr>
+                                                <tr><td><strong>Duration:</strong></td><td>{{course.duration}}</td></tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-toggle="collapse" data-parent="#course{{course.id}}" href="#collapse{{course.id}}" type="button" class="btn btn-default">Course details</button>
+                            <button type="button" class="btn btn-default">Go to course</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+            </div>
+        </div>
+        {% endfor %}
+{% endblock %}

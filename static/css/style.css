@@ -1,0 +1,20 @@
+body {
+    padding-top: 60px;
+}
+ul.blp-menu li > a {
+    color: #ffffff !important;
+}
+ul.blp-menu li.active > a {
+    color: #ffffff !important;
+}
+.blp-header {
+    background: #ffffff;
+}
+.blp-course h2 {
+    color: #a03b1e;
+}
+.panel-body img {
+    margin: 20px 0px 20px 0px;
+    width: 170px;
+    height: 170px;
+}
