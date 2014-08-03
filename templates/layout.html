@@ -26,36 +26,14 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <div class="jumbotron"><!-- style="background: url(/static/images/background.png) no-repeat; background-size: cover;
-    background-position-y: -200px;"-->
-                <h1>BlipNoise Courses</h1>
-                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <!--p><a class="btn btn-primary btn-lg">Learn more</a></p-->
-            </div>
-        </div>
+    {% block jumbotron %}
+    {% endblock jumbotron %}
+
     {% block content %}
-    {% endblock %}
+    {% endblock content %}
     </div>
 </div>
         <footer>
-                <div class="col-md-12 bs-docs-section">
-                <ul>
-                    <li><a>Products & Services</a></li>
-                    <li><a>Events</a></li>
-                    <li><a>Partners</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-                </div>
-
-            <!--div class="nav navbar-collapse">
-                <ul>
-                    <li><a>Products & Services</a></li>
-                    <li><a>Events</a></li>
-                    <li><a>Partners</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div-->
         </footer>
     </body>
 </html>
