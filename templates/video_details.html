@@ -9,7 +9,9 @@
                     <div class="panel">
                         <div class="panel-body">
                             <p></p>
-                            <iframe src="//player.vimeo.com/video/6770439" width="1140" height="566" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                {% block vimeo %}
+                                    <iframe src="//player.vimeo.com/video/6770439" width="1140" height="566" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+                                {% endblock vimeo %}
                             <div class="panel">
                                 <div class="panel-body">
                                     <p></p>
@@ -23,3 +25,4 @@
                 </div>
             </div>
 {% endblock %}
+

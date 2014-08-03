@@ -24,7 +24,12 @@ def coursesDetails():
 @app.route('/show-videos/')
 def videoDetails():
     template = env.get_template("video_details.html")
-    return  template.render(videos={})
+    return template.render(videos={})
+
+@app.route('/categories/<tagname>')
+def showTags(tagname):
+    template = env.get_template("categories.html")
+    return  template.render(category=tagname)
 
 #app.register_blueprint(Api)
 

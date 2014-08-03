@@ -19,8 +19,8 @@
                     </div>
                     <div class="bs-component">
                         <div>
-                        {% for tags in course.tags %}
-                            <span class="label label-primary">{{tags}}</span>
+                        {% for tag in course.tags %}
+                            <a href="/categories/{{tag}}" class="label label-primary">{{tag}}</a>
                         {% endfor%}
                         </div>
                         <br/>
