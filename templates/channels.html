@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block jumbotron %}
+{% endblock jumbotron %}
+
+{% block content %}
+    {% for channel in channels %}
+        <div class="bs-docs-section">
+            <div class="col-lg-6 col-md-6 col-sm-12 blp-course">
+                <div class="page-header">
+                    <h2>{{channel.title}}</h2>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

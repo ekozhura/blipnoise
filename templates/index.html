@@ -24,13 +24,7 @@
                         {% endfor%}
                         </div>
                         <br/>
-                        <div><!-- class="panel-body"-->
-
-                            <!--div class="col-md-4">
-                                <div class="panel">
-                                    <img ng-src="{{course.thumb}}" />
-                                </div>
-                            </div-->
+                        <div>
                             <div>
                             
                             <p>{{course.previewText}}
@@ -55,7 +49,9 @@
                                 </div>
                             </div>
                             <button data-toggle="collapse" data-parent="#course{{course.id}}" href="#collapse{{course.id}}" type="button" class="btn btn-default">Course details</button>
-                            <button type="button" class="btn btn-default">Go to course</button>
+                            <a href="/course/{{course.alias}}">
+                                <button type="button" class="btn btn-default">Go to course</button>
+                            </a>
                             </div>
                         </div>
                         

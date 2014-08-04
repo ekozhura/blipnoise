@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% import 'helpers/video.html' as video %}
+
 {% block content %}
             <div class="bs-docs-section">
                 <div class="col-lg-12 col-md-12 col-sm-12 blp-course">
@@ -9,7 +11,7 @@
                     <div class="panel">
                         <div class="panel-body">
                             <p></p>
-                                {% import 'helpers/video.html' as video %}
+                                
                                 {{ video.vimeo(6770439, 1140, 566) }}
                             <div class="panel">
                                 <div class="panel-body">

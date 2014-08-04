@@ -3,6 +3,7 @@ def _getCourses():
         {
             "id": 1,
             "title": "Max4Live: Live API",
+            "alias": "max4live-live-api",
             "previewText": "The Live Object Model lists a number of Live object classes with their properties and functions as well as their parent-child relations through which a hierarchy is formed. Please refer to the Live API overview chapter for definitions of the basic Live API terms and a list of the Max objects used to access it.",
             "content": [
                 "Part 1. Introduction to Max4Live and Live API.",
@@ -16,6 +17,7 @@ def _getCourses():
         {
             "id": 2,
             "title": "SuperCollider: Programming basics",
+            "alias": "supercollider-programming-basics",
             "previewText": "SuperCollider was developed by James McCartney and originally released in 1996. He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team. It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.",
             "content": [
                 "Part 1. Introduction to SuperCollider.",
@@ -30,6 +32,7 @@ def _getCourses():
         {
             "id": 423965,
             "title": "PureData: Basics",
+            "alias": "puredata-basics",
             "previewText": "Pure Data (aka Pd) is an open source visual programming language. Pd enables musicians, visual artists, performers, researchers, and developers to create software graphically, without writing lines of code. Pd is used to process and generate sound, video, 2D/3D graphics, and interface sensors, input devices, and MIDI.",
             "content": [
                 "Part 1. Intro to PureData.",
@@ -43,6 +46,7 @@ def _getCourses():
         {
             "id": 411234,
             "title": "SuperCollider: Bitwise Magic",
+            "alias": "supercollider-bitwise-magic",
             "thumb": "https://d1tijy5l7mg5kk.cloudfront.net/assets/path/badge-javascript-b12f48cc2af87eccb3d141c1b75d8fd8.svg",
             "previewText": "SuperCollider was developed by James McCartney and originally released in 1996. He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team. It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.",
             "content": [
@@ -55,8 +59,30 @@ def _getCourses():
         },
     ]
 
+def _getChannels():
+    return [
+        {
+            "id": 1,
+            "title": "Web Development",
+            "thumb": "",
+            "description": ""
+        },
+        {
+            "id": 2,
+            "title": "Audio Programming",
+            "thumb": "",
+            "description": ""
+        }
+    ]
+
+def getChannels():
+    return _getChannels()
+
 def getCourses():
     return _getCourses()
+
+def getCourseByAlias(alias):
+    return filter(lambda x: alias == x['alias'], _getCourses())[0]
 
 def getCoursesByTagname(tagname):
     return filter(lambda x: tagname in x['tags'], _getCourses())
