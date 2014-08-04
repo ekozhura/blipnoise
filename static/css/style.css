@@ -1,10 +1,13 @@
 body {
-    padding-top: 70px;
+    padding-top: 80px;
 }
-.blp-menu li>a{
-    padding-top: 20px;
+.blp-menu li>a {
+    padding-top: 25px;
     height: 70px !important;
     font-size: 18px;
+}
+.blp-menu .navbar-brand { 
+    padding-top: 18px !important;
 }
 .blp-header {
     background: #ffffff;
@@ -12,10 +15,6 @@ body {
 .blp-course h2 {
     color: #a03b1e;
 }
-.panel-body {
-    text-align: center
-}
-
 .blp-video-thumb {
     border: 1px solid #008cba;
     padding: 4px;

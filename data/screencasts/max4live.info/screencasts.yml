@@ -1,0 +1,28 @@
+max4live_info:
+    title: "Max4Live: Live API"
+    alias: "max4live-live-api"
+    author: "Michael Chenetz"
+    previewText: "The Live Object Model lists a number of Live object classes with their properties and functions as well as their parent-child relations through which a hierarchy is formed. Please refer to the Live API overview chapter for definitions of the basic Live API terms and a list of the Max objects used to access it."
+    lessons: 4
+    tags: ["ableton live", "max4live", "live object model", "advanced"]
+    videos:
+          - type: vimeo
+            video_id: 6770439
+            thumb: "https://i.vimeocdn.com/video/26854147_295x166.jpg"
+            title: "Sneak Peak"
+            alias: "max4live-sneak-peak"
+          - type: "vimeo"
+            video_id: 6800100
+            thumb: "https://i.vimeocdn.com/video/27077306_295x166.jpg"
+            title: "Paths, Objects, and Observers"
+            alias: "max4live-paths-objects-and-observers"
+          - type: vimeo
+            video_id: 6895721
+            thumb: "https://i.vimeocdn.com/video/27819365_295x166.jpg"
+            title: "Clips tutorial"
+            alias: "max4live-clips-tutorial"
+          - type: vimeo
+            video_id: 8413715
+            thumb: "https://i.vimeocdn.com/video/39152670_295x166.jpg"
+            title: "Object Oriented - Chucker and Live.Grid"
+            alias: "max4live-object-oriented-chucker-and-live-grid"

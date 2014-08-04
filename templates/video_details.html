@@ -11,8 +11,11 @@
                     <div class="panel">
                         <div class="panel-body">
                             <p></p>
-                                
-                                {{ video_embed.vimeo(video.video_id, "100%", 600) }}
+                                {% if video.type == "vimeo" %}
+                                    {{ video_embed.vimeo(video.video_id, "100%", 600) }}
+                                {% elif video.type == "youtube" %}
+                                    {{ video_embed.youtube(video.video_id, "100%", 600)}}
+                                {% endif %}
                             <div class="panel">
                             </div>
                         </div>

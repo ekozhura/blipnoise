@@ -10,38 +10,28 @@
             <h2>{{course.title}}</h2>
         </div>
         <div class="bs-component">
-            <div>
+            <p>
             {% for tag in course.tags %}
                 <a href="/categories/{{tag}}" class="label label-primary">{{tag}}</a>
             {% endfor%}
-            </div>
-            <br/>
-            <div><!-- class="panel-body"-->
-
-                <!--div class="col-md-4">
-                    <div class="panel">
-                        <img ng-src="{{course.thumb}}" />
-                    </div>
-                </div-->
-                <p>{{course.previewText}}
-                {% for video in course.videos %}
-                <div class="panel-group col-md-4" id="video_{{video.id}}">
-                    <div>
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">{{video.title}}</h4>
-                            </div>
-                            <div class="panel-body">
-                                <a href="/course/{{ course.alias }}/video/{{ video.alias }}">
-                                    <img src="{{ video.thumb }}" class="blp-video-thumb" />
-                                </a>
-                            </div>
+            </p>
+            <p>{{course.previewText}}</p>
+            {% for video in course.videos %}
+            <div class="panel-group col-md-3" id="video_{{video.id}}">
+                <div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">{{video.title}}</h4>
+                        </div>
+                        <div class="panel-body">
+                            <a href="/course/{{ course.alias }}/video/{{ video.alias }}">
+                                <img src="{{ video.thumb }}" class="blp-video-thumb" />
+                            </a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-            
+            {% endfor %}
         </div>
     </div>
 </div>

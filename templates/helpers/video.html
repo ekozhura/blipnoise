@@ -1,3 +1,7 @@
 {% macro vimeo(videoId, width, height) %}
 <iframe src="//player.vimeo.com/video/{{ videoId }}" width="{{ width }}" height="{{ height }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 {% endmacro %}
+
+{% macro youtube(videoId, width, height) %}
+<iframe width="{{ width }}" height="{{ height }}" src="//www.youtube.com/embed/{{ videoId }}" frameborder="0" allowfullscreen></iframe>
+{% endmacro %}
