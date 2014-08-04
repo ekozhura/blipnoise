@@ -15,12 +15,22 @@ def render_template(template_path):
     return make_response(open("templates/" + template_path).read())
 
 @app.route('/')
-@app.route('/show-courses/')
-@app.route('/courses/')
-def coursesDetails():
+def index():
     courses = Data.getCourses()
     template = env.get_template("index.html")
     return  template.render(courses=courses)
+
+@app.route('/courses/')
+def coursesDetails():
+    courses = Data.getCourses()
+    template = env.get_template("courses.html")
+    return  template.render(courses=courses)
+
+@app.route('/course/<courseAlias>')
+def getCourse(courseAlias):
+    course = Data.getCourseByAlias(courseAlias)
+    template = env.get_template("course.html")
+    return  template.render(course=course)
 
 @app.route('/show-videos/')
 def videoDetails():
@@ -32,6 +42,12 @@ def showTags(tagname):
     courses = Data.getCoursesByTagname(tagname)
     template = env.get_template("categories.html")
     return  template.render(category=tagname, courses=courses)
+
+@app.route('/channels/')
+def getChannels():
+    channels = Data.getChannels()
+    template = env.get_template("channels.html")
+    return  template.render(channels=channels)
 
 #app.register_blueprint(Api)
 
