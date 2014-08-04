@@ -12,8 +12,12 @@ body {
 .blp-course h2 {
     color: #a03b1e;
 }
-.panel-body img {
-    margin: 20px 0px 20px 0px;
-    width: 170px;
-    height: 170px;
+.panel-body {
+    text-align: center
+}
+
+.blp-video-thumb {
+    border: 1px solid #008cba;
+    padding: 4px;
+    width: 100%;
 }

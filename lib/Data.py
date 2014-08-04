@@ -10,6 +10,40 @@ def _getCourses():
                 "Part 2. Max4Live Plugins.",
                 "Part 3. Customizing Live."
             ],
+            "videos": [
+                {
+                    "id": 1,
+                    "type": "vimeo",
+                    "video_id": 6770439,
+                    "thumb": "https://i.vimeocdn.com/video/26854147_295x166.jpg",
+                    "title": "Sneak Peak",
+                    "alias": "max4live-sneak-peak"
+                },
+                {
+                    "id": 2,
+                    "type": "vimeo",
+                    "video_id": 6800100,
+                    "thumb": "https://i.vimeocdn.com/video/27077306_295x166.jpg",
+                    "title": "Paths, Objects, and Observers",
+                    "alias": "max4live-paths-objects-and-observers"
+                },
+                {
+                    "id": 3,
+                    "type": "vimeo",
+                    "video_id": 6895721,
+                    "thumb": "https://i.vimeocdn.com/video/27819365_295x166.jpg",
+                    "title": "Clips tutorial",
+                    "alias": "max4live-clips-tutorial"
+                },
+                {
+                    "id": 4,
+                    "type": "vimeo",
+                    "video_id": 8413715,
+                    "thumb": "https://i.vimeocdn.com/video/39152670_295x166.jpg",
+                    "title": "Object Oriented - Chucker and Live.Grid",
+                    "alias": "max4live-object-oriented-chucker-and-live-grid"
+                }
+            ],
             "lessons": 12,
             "duration": "5h 35m",
             "tags": ["ableton live", "max4live", "live object model", "advanced"]
@@ -74,6 +108,10 @@ def _getChannels():
             "description": ""
         }
     ]
+
+def getVideoByAlias(courseAlias, videoAlias):
+    course = getCourseByAlias(courseAlias)
+    return filter(lambda x: videoAlias == x['alias'], course['videos'])[0] 
 
 def getChannels():
     return _getChannels()

@@ -32,10 +32,11 @@ def getCourse(courseAlias):
     template = env.get_template("course.html")
     return  template.render(course=course)
 
-@app.route('/show-videos/')
-def videoDetails():
+@app.route('/course/<courseAlias>/video/<videoAlias>')
+def getVideo(courseAlias, videoAlias):
+    video = Data.getVideoByAlias(courseAlias, videoAlias)
     template = env.get_template("video_details.html")
-    return template.render(videos={})
+    return template.render(video=video)
 
 @app.route('/categories/<tagname>')
 def showTags(tagname):
