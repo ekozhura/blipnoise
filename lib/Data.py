@@ -1,5 +1,5 @@
-def getCourses():
-    courses = [
+def _getCourses():
+    return [
         {
             "id": 1,
             "title": "Max4Live: Live API",
@@ -55,4 +55,8 @@ def getCourses():
         },
     ]
 
-    return courses
+def getCourses():
+    return _getCourses()
+
+def getCoursesByTagname(tagname):
+    return filter(lambda x: tagname in x['tags'], _getCourses())

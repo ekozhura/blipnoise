@@ -9,9 +9,8 @@
                     <div class="panel">
                         <div class="panel-body">
                             <p></p>
-                                {% block vimeo %}
-                                    <iframe src="//player.vimeo.com/video/6770439" width="1140" height="566" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-                                {% endblock vimeo %}
+                                {% import 'helpers/video.html' as video %}
+                                {{ video.vimeo(6770439, 1140, 566) }}
                             <div class="panel">
                                 <div class="panel-body">
                                     <p></p>
@@ -25,4 +24,3 @@
                 </div>
             </div>
 {% endblock %}
-
