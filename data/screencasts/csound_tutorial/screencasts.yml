@@ -1,0 +1,88 @@
+csound_tutorial:
+    title: "CSound Tutorial"
+    alias: "csound-tutorial"
+    author: "John Turner"
+    previewText: "A sound and music computing system. Csound was originally written at MIT by Barry Vercoe, based on his earlier system called Music 11, which in its turn followed the MUSIC-N model initiated by Max Mathews at the Bell Labs. Its development continued throughout the 1990s and 2000s, led by John ffitch at the University of Bath."
+    lessons: 16
+    tags: ["csound", "programming basics"]
+    videos:
+          - type: youtube
+            video_id: KxyBTr0eamQ
+            thumb: "https://i.ytimg.com/vi/KxyBTr0eamQ/mqdefault.jpg"
+            title: "CSound Tutorial 1"
+            alias: "csound-tutorial-1"
+          - type: youtube
+            video_id: Z551JIJ7I0I
+            thumb: "https://i.ytimg.com/vi/Z551JIJ7I0I/mqdefault.jpg"
+            title: "CSound Tutorial 2"
+            alias: "csound-tutorial-2"
+          - type: youtube
+            video_id: hZ7cC1CcpT4
+            thumb: "https://i.ytimg.com/vi/hZ7cC1CcpT4/mqdefault.jpg"
+            title: "CSound Tutorial 3"
+            alias: "csound-tutorial-3"
+          - type: youtube
+            video_id: ImSG5jDY_2s
+            thumb: "https://i.ytimg.com/vi/ImSG5jDY_2s/mqdefault.jpg"
+            title: "CSound Tutorial 4"
+            alias: "csound-tutorial-4"
+          - type: youtube
+            video_id: 2MfOE8wv6Ag
+            thumb: "https://i.ytimg.com/vi/2MfOE8wv6Ag/mqdefault.jpg"
+            title: "CSound Tutorial 5"
+            alias: "csound-tutorial-5"
+          - type: youtube
+            video_id: SCFySGfoazU
+            thumb: "https://i.ytimg.com/vi/SCFySGfoazU/mqdefault.jpg"
+            title: "CSound Tutorial 6"
+            alias: "csound-tutorial-6"
+          - type: youtube
+            video_id: nQl_zCUi56A
+            thumb: "https://i.ytimg.com/vi/nQl_zCUi56A/mqdefault.jpg"
+            title: "CSound Tutorial 7"
+            alias: "csound-tutorial-7"
+          - type: youtube
+            video_id: rkBIUrJoJ3Y
+            thumb: "https://i.ytimg.com/vi/rkBIUrJoJ3Y/mqdefault.jpg"
+            title: "CSound Tutorial 8. Additive Synthesis"
+            alias: "csound-tutorial-8"
+          - type: youtube
+            video_id: wDAPo9hpCg
+            thumb: "https://i.ytimg.com/vi/wDAPo9hpCg/mqdefault.jpg"
+            title: "CSound Tutorial 9. Real Time Control pt.1"
+            alias: "csound-tutorial-9"
+          - type: youtube
+            video_id: UQZg1PYReP4
+            thumb: "https://i.ytimg.com/vi/UQZg1PYReP4/mqdefault.jpg"
+            title: "CSound Tutorial 10. Real Time Control pt.1"
+            alias: "csound-tutorial-10"
+          - type: youtube
+            video_id: wmr4BpohjwE
+            thumb: "https://i.ytimg.com/vi/wmr4BpohjwE/mqdefault.jpg"
+            title: "CSound Tutorial 11. Introduction to Samples"
+            alias: "csound-tutorial-11"
+          - type: youtube
+            video_id: I6ZvCwx-hfk
+            thumb: "https://i.ytimg.com/vi/I6ZvCwx-hfk/mqdefault.jpg"
+            title: "CSound Tutorial 12. Diskgrain: Granulation the Easy Way"
+            alias: "csound-tutorial-12"
+          - type: youtube
+            video_id: u-70gIev_-k
+            thumb: "https://i.ytimg.com/vi/u-70gIev_-k/mqdefault.jpg"
+            title: "CSound Tutorial 13. Sound Warp"
+            alias: "csound-tutorial-13"
+          - type: youtube
+            video_id: Is2DVz-35lg
+            thumb: "https://i.ytimg.com/vi/Is2DVz-35lg/mqdefault.jpg"
+            title: "CSound Tutorial 14. Break Beat Cutting"
+            alias: "csound-tutorial-14"
+          - type: youtube
+            video_id: FamcXxG6QVg
+            thumb: "https://i.ytimg.com/vi/FamcXxG6QVg/mqdefault.jpg"
+            title: "CSound Tutorial 15. Introduction to Panning"
+            alias: "csound-tutorial-15"
+          - type: youtube
+            video_id: eQ29t8cvcNc
+            thumb: "https://i.ytimg.com/vi/eQ29t8cvcNc/mqdefault.jpg"
+            title: "CSound Tutorial 16. Panning Part 2"
+            alias: "csound-tutorial-16"
