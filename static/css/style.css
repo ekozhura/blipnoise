@@ -1,11 +1,10 @@
 body {
-    padding-top: 60px;
+    padding-top: 70px;
 }
-ul.blp-menu li > a {
-    color: #ffffff !important;
-}
-ul.blp-menu li.active > a {
-    color: #ffffff !important;
+.blp-menu li>a{
+    padding-top: 20px;
+    height: 70px !important;
+    font-size: 18px;
 }
 .blp-header {
     background: #ffffff;
