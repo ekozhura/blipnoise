@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.fullPage.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/static/js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.fullPage.js"></script>
+
+{% import 'helpers/video.html' as video_embed %}
+
+
+
+{% block content %}
+
+            <div class="bs-docs-section">
+                <div class="col-lg-12 col-md-12 col-sm-12 blp-course">
+                    <div class="page-header">
+                        <h2><strong>{{ video.title }}</strong></h2>
+                    </div>
+                    <!--a style="float: left" href="#previous"><img src="/static/images/circle_back_arrow-48.png"/></a-->
+                    <div class="panel">
+                        <div class="panel-body">
+                                {% if video.type == "vimeo" %}
+                                    {{ video_embed.vimeo(video.video_id, "100%", 600) }}
+                                {% elif video.type == "youtube" %}
+                                    {{ video_embed.youtube(video.video_id, "100%", 600)}}
+                                {% endif %}
+                            <div class="panel">
+                            </div>
+                        </div>
+                    </div>
+                    <!--a style="float: right" href="#next"><img src="/static/images/circle_next_arrow-48.png"/></a-->
+                </div>
+
+            </div>
+
+{% endblock %}
