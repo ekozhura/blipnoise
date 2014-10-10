@@ -1,69 +1,100 @@
 {% extends "layout.html" %}
 
 {% block jumbotron %}
-<div class="col-lg-12">
-    <div class="jumbotron">
-        <h1>BlipNoise Courses</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <!--p><a class="btn btn-primary btn-lg">Learn more</a></p-->
+<div class="jumbo-header">
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <center><img src="/static/images/laptop-256.png" /></center>
+                <h1 style="font-weight: bold;">BlipNoise Courses</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <!--p><a class="btn btn-primary btn-lg">Learn more</a></p-->
+            </div>
+        </div>
     </div>
 </div>
 {% endblock jumbotron %}
 
 {% block content %}
+    <!--div class="bs-docs-section col-lg-4 col-md-4 col-sm-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent channels</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-section col-lg-4 col-md-4 col-sm-12">    
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent Series</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-section col-lg-4 col-md-4 col-sm-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recent Screencasts</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div-->
+
         {% for course in courses %}
         <div class="bs-docs-section">
-                <div class="col-lg-6 col-md-6 col-sm-12 blp-course">
-                    <div class="page-header">
-                        <h2>{{course.title}}</h2>
-                    </div>
-                    <div class="bs-component">
-                        <div>
+            <div class="col-lg-6 col-md-6 col-sm-12 blp-course">
+                <div class="page-header">
+                    <h2><a href="/course/{{course.alias}}">{{course.title}}</a></h2>
+                </div>
+                <div class="bs-component">
                         {% for tag in course.tags %}
                             <a href="/categories/{{tag}}" class="label label-primary">{{tag}}</a>
                         {% endfor%}
-                        </div>
                         <br/>
-                        <div>
+                        <p>{{course.previewText}}</p>
+
+
+                        <div class="panel-group" id="course{{course.id}}">
                             <div>
-                            
-                            <p>{{course.previewText}}
-                            <div class="panel-group" id="course{{course.id}}">
-                                <div>
-                                    <div id="collapse{{course.id}}" class="panel panel-collapse collapse panel-primary">
-                                        <div class="panel-heading">
-                                            <h4 class="panel-title">Content:</h4>
+                                <div id="collapse{{course.id}}" class="panel panel-collapse collapse panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Content:</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="list-group">
+                                            {% for content in course.content %}
+                                            <a href="#" class="list-group-item">{{content}}</a>
+                                            {% endfor %}
                                         </div>
-                                        <div class="panel-body">
-                                            <div class="list-group">
-                                                {% for content in course.content %}
-                                                <a href="#" class="list-group-item">{{content}}</a>
-                                                {% endfor %}
-                                            </div>
-                                            <table class="table">
-                                                <tr><td><strong>Screencasts:</strong></td><td>{{ course.videos|length }}</td></tr>
-                                                <tr><td><strong>Author:</strong></td><td>{{course.author}}</td></tr>
-                                            </table>
-                                        </div>
+                                        <table class="table">
+                                            <tr><td><strong>Screencasts:</strong></td><td>{{ course.videos|length }}</td></tr>
+                                            <tr><td><strong>Author:</strong></td><td>{{course.author}}</td></tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <button data-toggle="collapse" data-parent="#course{{course.id}}" href="#collapse{{course.id}}" type="button" class="btn btn-default">Course details</button>
-                            <a href="/course/{{course.alias}}">
-                                <button type="button" class="btn btn-default">Go to course</button>
-                            </a>
-                            </div>
                         </div>
-                        
-                    </div>
+                        <button data-toggle="collapse" data-parent="#course{{course.id}}" href="#collapse{{course.id}}" type="button" class="btn btn-default">Course details</button>
+                        <a href="/course/{{course.alias}}">
+                            <button type="button" class="btn btn-default">Go to course</button>
+                        </a>
+                </div>
 
             </div>
         </div>
         {% endfor %}
-        <div class="col-md-12 bs-docs-section">
+
+        <!--div class="col-md-12 bs-docs-section">
             <ul class="pager">
                 <li><a href="#">Previous</a></li>
                 <li><a href="#">Next</a></li>
             </ul>
-        </div>
+        </div-->
 {% endblock content %}

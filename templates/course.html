@@ -1,38 +1,64 @@
 {% extends "layout.html" %}
 
+{% block fullpage_deps %}
+        <link rel="stylesheet" type="text/css" href="/static/css/jquery.fullPage.css" />
+        <script src="/static/js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.fullPage.min.js"></script>
+{% endblock fullpage_deps %}
+
 {% block jumbotron %}
 {% endblock jumbotron %}
 
 {% block content %}
-<div class="bs-docs-section">
-    <div class="col-lg-12 col-md-12 col-sm-12 blp-course">
-        <div class="page-header">
-            <h2>{{course.title}}</h2>
-        </div>
-        <div class="bs-component">
-            <p>
-            {% for tag in course.tags %}
-                <a href="/categories/{{tag}}" class="label label-primary">{{tag}}</a>
-            {% endfor%}
-            </p>
-            <p>{{course.previewText}}</p>
-            {% for video in course.videos %}
-            <div class="panel-group col-md-3" id="video_{{video.id}}">
-                <div>
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">{{video.title}}</h4>
-                        </div>
-                        <div class="panel-body">
-                            <a href="/course/{{ course.alias }}/video/{{ video.alias }}">
-                                <img src="{{ video.thumb }}" class="blp-video-thumb" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+<div style="position: absolute; z-index: 11; right: 100px; top: 130px; width: 250px; height: 600px;">
+    <div id="course_menu" class="course-list">
+        <a href="#overview"><div data-menuanchor="overview">Overview</div></a>
+        {% for video in course.videos %}
+        <a href="#screencast_{{video.id}}"><div data-menuanchor="screencast_{{video.id}}">Lesson {{video.id}}</div></a>
+        {% endfor %}
     </div>
 </div>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <h2>{{course.title}}</h2>
+        <div style="width: 850px;">
+            <p>{{course.previewText}}</p>
+        </div>
+    </div>
+    
+    {% import 'helpers/video.html' as video_embed %}
+
+    {% for video in course.videos %}
+    <div class="section" id="section{{video.video_id}}">
+        <h2><strong>{{ video.title }}</strong></h2>
+            {% if video.type == "vimeo" %}
+                {{ video_embed.vimeo(video.video_id, "800", 540) }}
+            {% elif video.type == "youtube" %}
+                {{ video_embed.youtube(video.video_id, "800", 540)}}
+            {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        resize: false,
+        scrollingSpeed: 800,
+        normalScrollElementTouchThreshold: 2,
+        keyboardScrolling: true,
+        loopBottom: true,
+        touchSensitivity: 2,
+        menu: '#course_menu',
+        anchors: [
+            'overview',
+        {% for video in course.videos %}
+            'screencast_{{video.id}}',
+        {% endfor %}
+        ]
+    });
+});
+</script>
 {% endblock content %}

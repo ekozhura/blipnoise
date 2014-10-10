@@ -1,7 +1,11 @@
 {% macro vimeo(videoId, width, height) %}
-<iframe src="//player.vimeo.com/video/{{ videoId }}" width="{{ width }}" height="{{ height }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div style="width: {{width}}px; height: {{height}}px; background: #333333;">
+    <iframe src="//player.vimeo.com/video/{{ videoId }}" width="{{ width }}" height="{{ height }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 {% endmacro %}
 
 {% macro youtube(videoId, width, height) %}
-<iframe width="{{ width }}" height="{{ height }}" src="//www.youtube.com/embed/{{ videoId }}" frameborder="0" allowfullscreen></iframe>
+<div style="width: {{width}}px; height: {{height}}px; background: #333333;">
+    <iframe width="{{ width }}" height="{{ height }}" src="//www.youtube.com/embed/{{ videoId }}" frameborder="0" allowfullscreen></iframe>
+</div>
 {% endmacro %}

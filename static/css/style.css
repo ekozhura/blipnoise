@@ -1,5 +1,7 @@
 body {
-    padding-top: 80px;
+    padding-top: 70px;
+    background: #0076B2;
+    background: url('/static/images/greyzz.png');
 }
 .blp-menu li>a {
     padding-top: 25px;
@@ -12,11 +14,63 @@ body {
 .blp-header {
     background: #ffffff;
 }
+.page-header {
+    border: 0px !important;
+}
 .blp-course h2 {
+    font-weight: bold;
     color: #a03b1e;
+}
+.blp-course h2 a {
+    color: #a03b1e;
+}
+.blp-course h2 a:hover {
+    color: #a03b1e;
+    text-decoration: none;
 }
 .blp-video-thumb {
     border: 1px solid #008cba;
     padding: 4px;
     width: 100%;
+}
+.blp-search {
+    padding-top: 15px;
+}
+.jumbotron {
+    background: #333333;
+    height: 600px;
+    color: #ffffff;
+}
+.jumbo-header {
+    background: #333333;
+    width: 100%;
+    float: left;
+}
+footer {
+    background: #202020;
+    height: 200px;
+    padding: 30px;
+    color: #ffffff;
+    font-weight: normal;
+}
+.course-list {
+    list-style: none;
+}
+.course-list div {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+}
+.course-list a {
+    padding: 0px;
+    margin: 0px;
+    color: #666666;
+}
+.course-list a:hover {
+    text-decoration: none;
+}
+.course-list a:active div {
+    background: #dddddd;
 }

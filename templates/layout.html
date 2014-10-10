@@ -5,25 +5,29 @@
         <link href="/static/css/style.css" rel="stylesheet"/>
 
         <script type="text/javascript" src="/static/js/jquery.js"></script>
+        
+
+        <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
         <script type="text/javascript" src="/static/js/bootstrap/bootstrap.js"></script>
+
+        {% block fullpage_deps %}
+        {% endblock fullpage_deps %}
 
         <title>BlipNoise</title>
     </head>
     <body>
         {% include "helpers/navigation.html" %}
+        {% block jumbotron %}
+        {% endblock jumbotron %}
         <div class="container">
-            <div class="row">
-            {% block jumbotron %}
-            {% endblock jumbotron %}
 
             {% block content %}
             {% endblock content %}
-            </div>
         </div>
-        <footer>
+        <!--footer>
             <div class="container">
-                <p>Powered by Flask and Jinja2</p>
+                <p>Powered by <a href="">Flask</a> and <a href="">Jinja2</a></p>
             </div>
-        </footer>
+        </footer-->
     </body>
 </html>
