@@ -5,6 +5,14 @@
         <script src="/static/js/jquery.easings.min.js"></script>
         <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
         <script type="text/javascript" src="/static/js/jquery.fullPage.min.js"></script>
+
+        <link href="/static/js/videojs/video-js.css" rel="stylesheet">
+        <script src="/static/js/videojs/video.dev.js"></script>
+        <script>
+            videojs.options.flash.swf = "/static/js/videojs/video-js.swf"
+        </script>
+        <script src="/static/js/vjs.youtube.js"></script>
+        <script src="/static/js/vjs.vimeo.js"></script>
 {% endblock fullpage_deps %}
 
 {% block jumbotron %}
@@ -34,9 +42,11 @@
     <div class="section" id="section{{video.video_id}}">
         <h2><strong>{{ video.title }}</strong></h2>
             {% if video.type == "vimeo" %}
-                {{ video_embed.vimeo(video.video_id, "800", 540) }}
+                {{ video_embed.vimeo(video.video_id, 750, 500) }}
             {% elif video.type == "youtube" %}
-                {{ video_embed.youtube(video.video_id, "800", 540)}}
+                {{ video_embed.youtube(video.video_id, 750, 500)}}
+            {% elif video.type == "internal" %}
+                {{ video_embed.videojs(750, 500, video.video_id, video.url) }}
             {% endif %}
     </div>
     {% endfor %}
