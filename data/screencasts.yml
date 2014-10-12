@@ -216,3 +216,36 @@ csound_tutorial:
             title: "CSound Tutorial 16. Panning Part 2"
             alias: "csound-tutorial-16"
             id: 16
+
+chuck_programming:
+    title: "ChucK Programming"
+    alias: "chuck-programming"
+    author: "Michael Chenetz"
+    previewText: ""
+    lessons: 4
+    tags: ["chuck", "programming basics"]
+    videos:
+          - type: internal
+            video_id: 01
+            url: "file:///private/var/www/local_projects/blipnoise/static/video/video-01.mp4"
+            title: "Sneak Peak"
+            alias: "max4live-sneak-peak"
+            id: 1
+          - type: internal
+            video_id: 02
+            url: "file:///private/var/www/local_projects/blipnoise/static/video/video-02.mp4"
+            title: "Paths, Objects, and Observers"
+            alias: "max4live-paths-objects-and-observers"
+            id: 2
+          - type: internal
+            video_id: 03
+            url: "file:///private/var/www/local_projects/blipnoise/static/video/video-03.mp4"
+            title: "Clips tutorial"
+            alias: "max4live-clips-tutorial"
+            id: 3
+          - type: internal
+            video_id: 04
+            url: "file:///private/var/www/local_projects/blipnoise/static/video/video-04.mp4"
+            title: "Object Oriented - Chucker and Live.Grid"
+            alias: "max4live-object-oriented-chucker-and-live-grid"
+            id: 4

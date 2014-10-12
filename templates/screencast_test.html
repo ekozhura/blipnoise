@@ -26,7 +26,7 @@
     <div id="course_menu" class="course-list">
         <a href="#overview"><div data-menuanchor="overview">Overview</div></a>
         {% for video in course.videos %}
-        <a href="#screencast_{{video.id}}"><div data-menuanchor="screencast_{{video.id}}">Lesson {{video.id}}</div></a>
+        <a href="#screencast_{{video.video_order}}"><div data-menuanchor="screencast_{{video.video_order}}">{{video.video_title}}</div></a>
         {% endfor %}
     </div>
 </div>
@@ -35,23 +35,23 @@
     <div class="section" id="section0">
         <h2>{{course.title}}</h2>
         <div style="width: 850px;">
-            <p>{{course.previewText}}</p>
+            <p>{{course.description}}</p>
         </div>
     </div>
     
     {% import 'helpers/video.html' as video_embed %}
 
     {% for video in course.videos %}
-    <div class="section" id="section{{video.id}}">
-        <h2><strong>{{ video.title }}</strong></h2>
+    <div class="section" id="section{{video.video_order}}">
+        <h2><strong>{{ video.video_title }}</strong></h2>
             <div style="width: {{width}}px; height: {{height}}px; background: #333333;">
             </div>
             {% if video.type == "vimeo" %}
-                {{ video_embed.vimeo(video.id, 750, 500) }}
+                {{ video_embed.vimeo(video.external_id, 750, 500) }}
             {% elif video.type == "youtube" %}
-                {{ video_embed.youtube(video.id, 750, 500)}}
+                {{ video_embed.youtube(video.external_id, 750, 500)}}
             {% elif video.type == "internal" %}
-                {{ video_embed.videojs(750, 500, video.id, video.url) }}
+                {{ video_embed.videojs(750, 500, video.external_id, video.video_url) }}
             {% endif %}
     </div>
     {% endfor %}
@@ -75,7 +75,7 @@ $(document).ready(function() {
         anchors: [
             'overview',
         {% for video in course.videos %}
-            'screencast_{{video.id}}',
+            'screencast_{{video.video_order}}',
         {% endfor %}
         ],
         afterLoad: function(i, l){
