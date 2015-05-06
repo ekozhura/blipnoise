@@ -1,0 +1,46 @@
+extends layout
+
+block jumbotron
+  div.jumbo-header
+    .container
+      .col-lg-12
+        .jumbotron
+          center
+            img(src='/static/images/laptop-256.png')
+          |                 
+          h1(style='font-weight: bold;') BlipNoise Courses
+          |                 
+          p
+            | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+
+block content
+  each course in courses
+    .bs-docs-section
+      .col-lg-6.col-md-6.col-sm-12.blp-course
+        .page-header
+          h2
+            a(href!= "/course/" + course.alias)= course.title
+          
+          p!= course.previewText
+
+          div.panel-group(id!= "course" + course.id)
+            div
+              div.panel.panel-collapse.collapse.panel-primary(id= "collapse" + course.id)
+                div.panel-heading
+                  h4.panel-title Content:
+                div.panel-body
+                  div.list-group
+                    table.table
+                      tr
+                        td
+                          strong Screencasts:
+                        td= course.videos.length
+                      tr
+                        td
+                          strong Author
+                        td= course.author
+
+          button(data-toggle="collapse", data-parent= "#course" + course.id, href= "#collapse" + course.id, type="button", class="btn btn-default") Course details
+
+          a(href!= "/course/" + course.alias)
+            button.btn.btn-default(type="button") Go to course

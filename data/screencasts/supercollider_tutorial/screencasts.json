@@ -1,0 +1,100 @@
+{
+  "supercollider_tutorial": {
+    "title": "SuperCollider Tutorial",
+    "alias": "supercollider-tutorial",
+    "author": "Eli Fieldsteel",
+    "previewText": "SuperCollider was developed by James McCartney and originally released in 1996. He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team. It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.",
+    "lessons": 12,
+    "tags": [
+      "supercollider",
+      "programming basics",
+      "audio"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "video_id": "yRzsOOiJ_p4",
+        "thumb": "https://i.ytimg.com/vi/yRzsOOiJ_p4/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 0. Introduction",
+        "alias": "supercollider-tutorial-0"
+      },
+      {
+        "type": "youtube",
+        "video_id": "ntL8QDOhhL8",
+        "thumb": "https://i.ytimg.com/vi/ntL8QDOhhL8/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 1. Navigating the Environment",
+        "alias": "supercollider-tutorial-1"
+      },
+      {
+        "type": "youtube",
+        "video_id": "oTBcGPXH6K0",
+        "thumb": "https://i.ytimg.com/vi/oTBcGPXH6K0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 2. Making Sound",
+        "alias": "supercollider-tutorial-2"
+      },
+      {
+        "type": "youtube",
+        "video_id": "LKGGWsXyiyo",
+        "thumb": "https://i.ytimg.com/vi/LKGGWsXyiyo/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 3. Synth and SynthDef",
+        "alias": "supercollider-tutorial-3"
+      },
+      {
+        "type": "youtube",
+        "video_id": "-wDAPo9hpCg",
+        "thumb": "https://i.ytimg.com/vi/-wDAPo9hpCg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 4. Envelopes and doneAction",
+        "alias": "supercollider-tutorial-4"
+      },
+      {
+        "type": "youtube",
+        "video_id": "fAXETAyrv8s",
+        "thumb": "https://i.ytimg.com/vi/fAXETAyrv8s/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 5. Multichannel Expansion",
+        "alias": "supercollider-tutorial-5"
+      },
+      {
+        "type": "youtube",
+        "video_id": "bMGXYEg1gJo",
+        "thumb": "https://i.ytimg.com/vi/bMGXYEg1gJo/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 6. Iteration",
+        "alias": "supercollider-tutorial-6"
+      },
+      {
+        "type": "youtube",
+        "video_id": "VGs_lMw2hQg",
+        "thumb": "https://i.ytimg.com/vi/VGs_lMw2hQg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 7. Server Architecture",
+        "alias": "supercollider-tutorial-7"
+      },
+      {
+        "type": "youtube",
+        "video_id": "_GZmuvmgtUc",
+        "thumb": "https://i.ytimg.com/vi/_GZmuvmgtUc/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 8. Buffers",
+        "alias": "supercollider-tutorial-8"
+      },
+      {
+        "type": "youtube",
+        "video_id": "Oz4KYZ9KLc0",
+        "thumb": "https://i.ytimg.com/vi/Oz4KYZ9KLc0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 9. MIDI",
+        "alias": "supercollider-tutorial-9"
+      },
+      {
+        "type": "youtube",
+        "video_id": "nB_bVJ1c1Rg",
+        "thumb": "https://i.ytimg.com/vi/nB_bVJ1c1Rg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 10. Patterns",
+        "alias": "supercollider-tutorial-10"
+      },
+      {
+        "type": "youtube",
+        "video_id": "ZVTbRNu2BI0",
+        "thumb": "https://i.ytimg.com/vi/ZVTbRNu2BI0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 11. TouchOSC",
+        "alias": "supercollider-tutorial-11"
+      }
+    ]
+  }
+}

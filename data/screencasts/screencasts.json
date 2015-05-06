@@ -1,0 +1,300 @@
+{
+  "max4live_info": {
+    "title": "Max4Live: Live API",
+    "alias": "max4live-live-api",
+    "author": "Michael Chenetz",
+    "previewText": "The Live Object Model lists a number of Live object classes with their properties and functions as well as their parent-child relations through which a hierarchy is formed. Please refer to the Live API overview chapter for definitions of the basic Live API terms and a list of the Max objects used to access it.",
+    "lessons": 4,
+    "tags": [
+      "ableton live",
+      "max4live",
+      "live object model",
+      "advanced"
+    ],
+    "videos": [
+      {
+        "type": "vimeo",
+        "video_id": 6770439,
+        "thumb": "https://i.vimeocdn.com/video/26854147_295x166.jpg",
+        "title": "Sneak Peak",
+        "alias": "max4live-sneak-peak",
+        "id": 1
+      },
+      {
+        "type": "vimeo",
+        "video_id": 6800100,
+        "thumb": "https://i.vimeocdn.com/video/27077306_295x166.jpg",
+        "title": "Paths, Objects, and Observers",
+        "alias": "max4live-paths-objects-and-observers",
+        "id": 2
+      },
+      {
+        "type": "vimeo",
+        "video_id": 6895721,
+        "thumb": "https://i.vimeocdn.com/video/27819365_295x166.jpg",
+        "title": "Clips tutorial",
+        "alias": "max4live-clips-tutorial",
+        "id": 3
+      },
+      {
+        "type": "vimeo",
+        "video_id": 8413715,
+        "thumb": "https://i.vimeocdn.com/video/39152670_295x166.jpg",
+        "title": "Object Oriented - Chucker and Live.Grid",
+        "alias": "max4live-object-oriented-chucker-and-live-grid",
+        "id": 4
+      }
+    ]
+  },
+  "supercollider_tutorial": {
+    "title": "SuperCollider Tutorial",
+    "alias": "supercollider-tutorial",
+    "author": "Eli Fieldsteel",
+    "previewText": "SuperCollider was developed by James McCartney and originally released in 1996. He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team. It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.",
+    "lessons": 12,
+    "tags": [
+      "supercollider",
+      "programming basics",
+      "audio"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "video_id": "yRzsOOiJ_p4",
+        "thumb": "https://i.ytimg.com/vi/yRzsOOiJ_p4/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 0. Introduction",
+        "alias": "supercollider-tutorial-0",
+        "id": 1
+      },
+      {
+        "type": "youtube",
+        "video_id": "ntL8QDOhhL8",
+        "thumb": "https://i.ytimg.com/vi/ntL8QDOhhL8/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 1. Navigating the Environment",
+        "alias": "supercollider-tutorial-1",
+        "id": 2
+      },
+      {
+        "type": "youtube",
+        "video_id": "oTBcGPXH6K0",
+        "thumb": "https://i.ytimg.com/vi/oTBcGPXH6K0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 2. Making Sound",
+        "alias": "supercollider-tutorial-2",
+        "id": 3
+      },
+      {
+        "type": "youtube",
+        "video_id": "LKGGWsXyiyo",
+        "thumb": "https://i.ytimg.com/vi/LKGGWsXyiyo/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 3. Synth and SynthDef",
+        "alias": "supercollider-tutorial-3",
+        "id": 4
+      },
+      {
+        "type": "youtube",
+        "video_id": "-wDAPo9hpCg",
+        "thumb": "https://i.ytimg.com/vi/-wDAPo9hpCg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 4. Envelopes and doneAction",
+        "alias": "supercollider-tutorial-4",
+        "id": 5
+      },
+      {
+        "type": "youtube",
+        "video_id": "fAXETAyrv8s",
+        "thumb": "https://i.ytimg.com/vi/fAXETAyrv8s/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 5. Multichannel Expansion",
+        "alias": "supercollider-tutorial-5",
+        "id": 6
+      },
+      {
+        "type": "youtube",
+        "video_id": "bMGXYEg1gJo",
+        "thumb": "https://i.ytimg.com/vi/bMGXYEg1gJo/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 6. Iteration",
+        "alias": "supercollider-tutorial-6",
+        "id": 7
+      },
+      {
+        "type": "youtube",
+        "video_id": "VGs_lMw2hQg",
+        "thumb": "https://i.ytimg.com/vi/VGs_lMw2hQg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 7. Server Architecture",
+        "alias": "supercollider-tutorial-7",
+        "id": 8
+      },
+      {
+        "type": "youtube",
+        "video_id": "_GZmuvmgtUc",
+        "thumb": "https://i.ytimg.com/vi/_GZmuvmgtUc/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 8. Buffers",
+        "alias": "supercollider-tutorial-8",
+        "id": 8
+      },
+      {
+        "type": "youtube",
+        "video_id": "Oz4KYZ9KLc0",
+        "thumb": "https://i.ytimg.com/vi/Oz4KYZ9KLc0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 9. MIDI",
+        "alias": "supercollider-tutorial-9",
+        "id": 9
+      },
+      {
+        "type": "youtube",
+        "video_id": "nB_bVJ1c1Rg",
+        "thumb": "https://i.ytimg.com/vi/nB_bVJ1c1Rg/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 10. Patterns",
+        "alias": "supercollider-tutorial-10",
+        "id": 10
+      },
+      {
+        "type": "youtube",
+        "video_id": "ZVTbRNu2BI0",
+        "thumb": "https://i.ytimg.com/vi/ZVTbRNu2BI0/mqdefault.jpg",
+        "title": "SuperCollider Tutorial: 11. TouchOSC",
+        "alias": "supercollider-tutorial-11",
+        "id": 11
+      }
+    ]
+  },
+  "csound_tutorial": {
+    "title": "CSound Tutorial",
+    "alias": "csound-tutorial",
+    "author": "John Turner",
+    "previewText": "A sound and music computing system. Csound was originally written at MIT by Barry Vercoe, based on his earlier system called Music 11, which in its turn followed the MUSIC-N model initiated by Max Mathews at the Bell Labs. Its development continued throughout the 1990s and 2000s, led by John ffitch at the University of Bath.",
+    "lessons": 16,
+    "tags": [
+      "csound",
+      "programming basics"
+    ],
+    "videos": [
+      {
+        "type": "youtube",
+        "video_id": "KxyBTr0eamQ",
+        "thumb": "https://i.ytimg.com/vi/KxyBTr0eamQ/mqdefault.jpg",
+        "title": "CSound Tutorial 1",
+        "alias": "csound-tutorial-1",
+        "id": 1
+      },
+      {
+        "type": "youtube",
+        "video_id": "Z551JIJ7I0I",
+        "thumb": "https://i.ytimg.com/vi/Z551JIJ7I0I/mqdefault.jpg",
+        "title": "CSound Tutorial 2",
+        "alias": "csound-tutorial-2",
+        "id": 2
+      },
+      {
+        "type": "youtube",
+        "video_id": "hZ7cC1CcpT4",
+        "thumb": "https://i.ytimg.com/vi/hZ7cC1CcpT4/mqdefault.jpg",
+        "title": "CSound Tutorial 3",
+        "alias": "csound-tutorial-3",
+        "id": 3
+      },
+      {
+        "type": "youtube",
+        "video_id": "ImSG5jDY_2s",
+        "thumb": "https://i.ytimg.com/vi/ImSG5jDY_2s/mqdefault.jpg",
+        "title": "CSound Tutorial 4",
+        "alias": "csound-tutorial-4",
+        "id": 4
+      },
+      {
+        "type": "youtube",
+        "video_id": "2MfOE8wv6Ag",
+        "thumb": "https://i.ytimg.com/vi/2MfOE8wv6Ag/mqdefault.jpg",
+        "title": "CSound Tutorial 5",
+        "alias": "csound-tutorial-5",
+        "id": 5
+      },
+      {
+        "type": "youtube",
+        "video_id": "SCFySGfoazU",
+        "thumb": "https://i.ytimg.com/vi/SCFySGfoazU/mqdefault.jpg",
+        "title": "CSound Tutorial 6",
+        "alias": "csound-tutorial-6",
+        "id": 6
+      },
+      {
+        "type": "youtube",
+        "video_id": "nQl_zCUi56A",
+        "thumb": "https://i.ytimg.com/vi/nQl_zCUi56A/mqdefault.jpg",
+        "title": "CSound Tutorial 7",
+        "alias": "csound-tutorial-7",
+        "id": 7
+      },
+      {
+        "type": "youtube",
+        "video_id": "rkBIUrJoJ3Y",
+        "thumb": "https://i.ytimg.com/vi/rkBIUrJoJ3Y/mqdefault.jpg",
+        "title": "CSound Tutorial 8. Additive Synthesis",
+        "alias": "csound-tutorial-8",
+        "id": 8
+      },
+      {
+        "type": "youtube",
+        "video_id": "jTDRXQIRB5w",
+        "thumb": "https://i.ytimg.com/vi/jTDRXQIRB5w/mqdefault.jpg",
+        "title": "CSound Tutorial 9. Real Time Control Part 1",
+        "alias": "csound-tutorial-9",
+        "id": 9
+      },
+      {
+        "type": "youtube",
+        "video_id": "UQZg1PYReP4",
+        "thumb": "https://i.ytimg.com/vi/UQZg1PYReP4/mqdefault.jpg",
+        "title": "CSound Tutorial 10. Real Time Control Part 2",
+        "alias": "csound-tutorial-10",
+        "id": 10
+      },
+      {
+        "type": "youtube",
+        "video_id": "wmr4BpohjwE",
+        "thumb": "https://i.ytimg.com/vi/wmr4BpohjwE/mqdefault.jpg",
+        "title": "CSound Tutorial 11. Introduction to Samples",
+        "alias": "csound-tutorial-11",
+        "id": 11
+      },
+      {
+        "type": "youtube",
+        "video_id": "I6ZvCwx-hfk",
+        "thumb": "https://i.ytimg.com/vi/I6ZvCwx-hfk/mqdefault.jpg",
+        "title": "CSound Tutorial 12. diskgrain: granulation the easy way",
+        "alias": "csound-tutorial-12",
+        "id": 12
+      },
+      {
+        "type": "youtube",
+        "video_id": "u-70gIev_-k",
+        "thumb": "https://i.ytimg.com/vi/u-70gIev_-k/mqdefault.jpg",
+        "title": "CSound Tutorial 13. Sound Warp",
+        "alias": "csound-tutorial-13",
+        "id": 13
+      },
+      {
+        "type": "youtube",
+        "video_id": "Is2DVz-35lg",
+        "thumb": "https://i.ytimg.com/vi/Is2DVz-35lg/mqdefault.jpg",
+        "title": "CSound Tutorial 14. Break Beat Cutting",
+        "alias": "csound-tutorial-14",
+        "id": 14
+      },
+      {
+        "type": "youtube",
+        "video_id": "FamcXxG6QVg",
+        "thumb": "https://i.ytimg.com/vi/FamcXxG6QVg/mqdefault.jpg",
+        "title": "CSound Tutorial 15. Introduction to Panning",
+        "alias": "csound-tutorial-15",
+        "id": 15
+      },
+      {
+        "type": "youtube",
+        "video_id": "eQ29t8cvcNc",
+        "thumb": "https://i.ytimg.com/vi/eQ29t8cvcNc/mqdefault.jpg",
+        "title": "CSound Tutorial 16. Panning Part 2",
+        "alias": "csound-tutorial-16",
+        "id": 16
+      }
+    ]
+  }
+}
